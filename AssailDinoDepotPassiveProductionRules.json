@@ -411,14 +411,14 @@
       "chanceToProduce": 1,
       "produces": [
         {
-          "intervalSeconds": 60,
+          "intervalSeconds": 300,
           "itemSelectMode": 0,
           "items": [
             {
               "bpPath": "Blueprint'/TitanSulfur/Content/SulfurTitan/Items/PrimalItemResource_Sulfur_Crystalized.PrimalItemResource_Sulfur_Crystalized",
               "maxQuantityPerCycle": 0,
               "maxQuantityInTerminal": 0,
-              "quantityPerDino": 30,
+              "quantityPerDino": 150,
               "alternateSelectMode": 0,
               "alternateItemsChance": 0,
               "alternateItems": [],
