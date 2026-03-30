@@ -407,7 +407,7 @@
       ]
     },
     {
-      "dinoType": "Blueprint'/TitanSulfur/Content/SulfurTitan/SulfurTitan_Character_BP.SulfurTitan_Character_BP",
+      "dinoType": "/TitanSulfur/Content/SulfurTitan/SulfurTitan_Character_BP.SulfurTitan_Character_BP",
       "chanceToProduce": 1,
       "produces": [
         {
@@ -415,7 +415,7 @@
           "itemSelectMode": 0,
           "items": [
             {
-              "bpPath": "Blueprint'/TitanSulfur/Content/SulfurTitan/Items/PrimalItemResource_Sulfur_Crystalized.PrimalItemResource_Sulfur_Crystalized",
+              "bpPath": "/TitanSulfur/Content/SulfurTitan/Items/PrimalItemResource_Sulfur_Crystalized.PrimalItemResource_Sulfur_Crystalized",
               "maxQuantityPerCycle": 0,
               "maxQuantityInTerminal": 0,
               "quantityPerDino": 150,
