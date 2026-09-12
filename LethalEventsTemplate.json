@@ -1,0 +1,310 @@
+{
+  "AccountKey": "",
+  "AutoRenewLicense": true,
+  "HostLicense": false,
+  "Commands": {
+    "StartEvent": "/start",
+    "StartEventRCON": "ServerEventsAscended.start",
+    "CancelEvent": "/cancel",
+    "CancelEventRCON": "ServerEventsAscended.cancel",
+    "StartRandomEvent": "/startrandom",
+    "StartRandomEventRCON": "ServerEventsAscended.startrandom"
+  },
+  "DiscordLogging": {
+    "Enabled": false,
+    "Webhook": "https://discord.com/api/webhooks/1548126871223537704/ML43-hh6lByerfHd73Ho-qD3FYJYSNZaodOReE_5coRG07DNBjznvC3Ay1idovXzK__Z",
+    "WebhookPrefix": {
+      "Ragnarok": "Ragnarok",
+      "Valguero_WP": "Valguero",
+      "Aberration_WP": "The Broken Ark",
+      "TheCenter": "The Center",
+      "TheIsland_WP": "The Island",
+      "ScorchedEarth_WP": "The Desert Ark",
+      "Genesis": "The Genesis Simulation",
+      "Extinction": "The Dead Earth",
+      "CrystalIsles": "Crystal Isles",
+      "Gen2": "The Genesis Starship"
+    }
+  },
+  "UseTekArena": false,
+  "CryoBP": "Blueprint'/Game/Extinction/CoreBlueprints/Weapons/PrimalItem_WeaponEmptyCryopod.PrimalItem_WeaponEmptyCryopod'",
+  "RequireFullParticipation": true,
+  "RandomDinoRewards": [],
+  "RandomItemRewards": [],
+  "RandomEvents": {
+    "Apex": []
+  },
+  "RandomEventLocations": {
+    "Apex": {
+      "TheIsland_WP": [],
+      "ScorchedEarth_WP": [],
+      "Aberration_WP": [],
+      "Extinction": [],
+      "LostColony_WP": [],
+      "Genesis": [],
+      "Gen2": [],
+      "TheCenter": [],
+      "Ragnarok": [],
+      "Valguero_WP": [],
+      "CrystalIsles": [],
+      "LostIsland": []
+    }
+  },
+  "Events": {
+    "Template": {
+      "Label": "Template Name",
+      "AutoCancelAfterXMinutes": 200,
+      "Boss": {
+        "BP": "Blueprint Path here",
+        "PossibleBuffs": [],
+        "Level": 1,
+        "MaxHealth": -1,
+        "IncreaseDamageByPercent": 0,
+        "AllowEngramUnlocks": false,
+        "AllowAchievements": false,
+        "AllowStandardItems": false,
+        "SizeMultiplier": 1.0
+      },
+      "Support": {
+        "Enabled": false,
+        "MinLevel": 150,
+        "MaxLevel": 200,
+        "Frequency": 60,
+        "SpawnPerFrequency": 6,
+        "MaxSpawns": 12,
+        "PossibleSpawns": [],
+        "PossibleBuffs": []
+      },
+      "Arena": {
+        "Size": 15000,
+        "Color": "Blue",
+        "TetherBoss": true,
+        "PreventBossTetherHeal": false,
+        "PreventBuilding": true,
+        "PreventFlyers": false,
+        "PreventTekSuitFlying": false,
+        "PreventStuctureDamage": true,
+        "HealWithEmptyArena": true,
+        "HideArena": false,
+        "PlayerLimit": -1,
+        "DinoLimit": -1,
+        "PreventLeaving": false,
+        "PreventEntering": false,
+        "EnteringRequiresPermission": []
+      },
+      "Reward": {
+        "StaticLoot": [
+          {
+            "Blueprint": "",
+            "Amount": 5
+          }
+        ],
+        "PerPlayerLoot": [
+          {
+            "Type": "item",
+            "Amount": 1,
+            "MinQuality": 0,
+            "MaxQuality": 0,
+            "ForceBlueprint": false,
+            "Blueprint": ""
+          },
+          {
+            "Type": "item",
+            "Amount": 1,
+            "MinQuality": 0,
+            "MaxQuality": 4,
+            "ForceBlueprint": false,
+            "Blueprint": "random"
+          },
+          {
+            "Type": "experience",
+            "Amount": 0
+          },
+          {
+            "Type": "dino",
+            "Level": 150,
+            "Neutered": false,
+            "Blueprint": ""
+          },
+          {
+            "Type": "dino",
+            "MinLevel": 150,
+            "MaxLevel": 200,
+            "Neutered": false,
+            "Blueprint": "random"
+          }
+        ]
+      }
+    }
+  },
+  "EventSettings": {
+    "EventWarmup": 60,
+    "EventCooldown": 30,
+    "ShowEventCooldownMessage": true,
+    "DestroyAllStructures": false,
+    "MinPlayerLevel": 1,
+    "PreventBossDamageOutsideArena": true
+  },
+  "EventBalanceSettings": {
+    "Enabled": true,
+    "AllowStatusEffects": false,
+    "ImmuneOutsideDamage": true,
+    "DisablePVP": true,
+    "DisableGrapple": false,
+    "ShowFloatingDamageText": true,
+    "ReduceDamageByPercent": 0,
+    "Dinos": []
+  },
+  "Messages": {
+    "Sender": {
+      "Message": "Server Events Ascended"
+    },
+    "ExpReward": {
+      "Message": "You received {} experience for participating in the event!"
+    },
+    "ItemReward": {
+      "Message": "You received an Item(s) for participating in the event!"
+    },
+    "CommandReward": {
+      "Message": "'{}' command was given for participating in the event!"
+    },
+    "Dismount": {
+      "Message": "Please dismount before starting an event!"
+    },
+    "CryoReward": {
+      "Message": "Reward Dino"
+    },
+    "CryoRewardDescription": {
+      "Message": "Let the dino out to see what you got!"
+    },
+    "EventStarting": {
+      "Message": "'{EventName}' event starts in {TimeLeft} @ {GPS}!",
+      "Scale": 1.0,
+      "DisplayTime": 2.0,
+      "Color": "Red"
+    },
+    "EventStartingDiscord": {
+      "Message": "```\nServer: {WebHookPrefix} - '{EventName}' event starts in {TimeLeft} @ {GPS}!```"
+    },
+    "EventStarted": {
+      "Message": "'{EventName}' event is active now @ {GPS}!",
+      "Scale": 1.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "EventAlreadyActive": {
+      "Message": "An event is already active and must be canceled first!",
+      "Scale": 1.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "EventEnding": {
+      "Message": "'{EventName}' event is ending in {TimeLeft} @ {GPS}!",
+      "Scale": 1.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "EventComplete": {
+      "Message": "'{EventName}' event is now over!",
+      "Scale": 1.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "EventCompleteDiscord": {
+      "Message": "```\nServer: {WebHookPrefix} - '{EventName}' event is now over @ {GPS}!```"
+    },
+    "EventCanceled": {
+      "Message": "'{EventName}' event has been canceled!",
+      "Scale": 1.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "EventCanceledDiscord": {
+      "Message": "```\nServer: {WebHookPrefix} - '{EventName}' event has been canceled @ {GPS}!```"
+    },
+    "NoFlyers": {
+      "Message": "No flying in the arena!",
+      "Scale": 1.2,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "NoBuilding": {
+      "Message": "No building in the arena!",
+      "Scale": 1.8,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "NoTekSuit": {
+      "Message": "No Tek Suit flying in the arena!\nRe-equip outside the arena to restore flying ability.",
+      "Scale": 1.2,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "PreventLeavingArenaWarning": {
+      "Message": "Once the boss spawns you will be locked in the arena until you or the boss is dead!",
+      "Scale": 2.0,
+      "DisplayTime": 5.0,
+      "Color": "Yellow"
+    },
+    "PreventLeavingArena": {
+      "Message": "You have entered the boss arena and must fight to the death.",
+      "Scale": 2.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "PreventEnteringArena": {
+      "Message": "You are not allowed to enter the boss arena.",
+      "Scale": 2.0,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "ArenaPlayerLimit": {
+      "Message": "Allowed Arena Players {}/{}",
+      "Scale": 1.5,
+      "DisplayTime": 2.0,
+      "Color": "Red"
+    },
+    "ArenaPlayerLimitReached": {
+      "Message": "No more players can enter the arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "ArenaDinoLimit": {
+      "Message": "Allowed Arena Dinos {}/{}",
+      "Scale": 1.5,
+      "DisplayTime": 2.0,
+      "Color": "Red"
+    },
+    "ArenaDinoLimitReached": {
+      "Message": "No more dinos can enter the arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "ArenaEnter": {
+      "Message": "You have been teleported into the Arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Green"
+    },
+    "ArenaExit": {
+      "Message": "You have been teleported out of the arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Yellow"
+    },
+    "PassengerSeats": {
+      "Message": "Passenger Seats must be emptry to enter the arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    },
+    "NoCarry": {
+      "Message": "Unable to carry players/dinos into the arena!",
+      "Scale": 1.5,
+      "DisplayTime": 5.0,
+      "Color": "Red"
+    }
+  }
+}
